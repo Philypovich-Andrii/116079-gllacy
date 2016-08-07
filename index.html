@@ -1,12 +1,219 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Глейси</title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="header-left">
+					<img src="img/small-logo.png" width="150" height="75" alt="Gllacy Shop">
+					<nav class="main-navigation">
+						<ul class="main-menu">
+							<li><a href="#">Каталог</a>
+								<ul class="sub-menu">
+									<li><a href="#">Новинки</a>
+									<li><a href="#">Сливочное</a>
+									<li><a href="#">Щербеты</a>
+									<li><a href="#">Фруктовый лед</a>
+									<li><a href="#">Мелорин</a>
+								</ul>
+							</li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">О компании</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-right">
+					<div class="search-block">
+						<a href="#" class="btn search"></a>
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+							<input type="text" name="What-Find" value="" placeholder="Что ищем?">
+						</form>
+					</div>
+					<div class="enter-block">
+						<a href="#" class="btn enter"></a>
+						<form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
+							<input type="text" name="login" value="" placeholder="Электронная почта">
+							<input type="password" name="password" value="" placeholder="Пароль">
+							<input type="submit" value="Войти">
+							<a href="#" class="btn enter-form-forgot">Забыли пароль?</a>
+							<a href="#" class="btn enter-form-registry">Новая регистрация</a>
+						</form>
+					</div>
+					<!-- Это вставил в отдельные блоки с целью единообразия кода в блоке "header-right" - я его разбиваю на 4 части, каждую оборачиваю в div. Впрочем - это вопрос для обсуждения -->
+					<div class="basket-block">
+						<a href="#" class="btn basket"></a>
+					</div>
+					<div class="contacts-block">
+						<p class="contacts-time">C 10 до 20, ежедневно</p>
+						<p class="contacts-phone">8 812 450-25-25</p>
+					</div>
+				</div>
+			</header>
+			<main>
+				<div class="slider">
+					<div class="slide slide-1">
+						<p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
+						<a class="btn slide-btn" href="#">Давайте оба!</a>
+					</div>
+					<div class="slide slide-2">
+						<p class="slide-title">Шоколадный пломбир и лимонный сорбет</p>
+						<a class="btn slide-btn" href="#">Давайте оба!</a>
+					</div>
+					<div class="slide slide-3">
+						<p class="slide-title">Пломбир с помадкой и клубничный щербет</p>
+						<a class="btn slide-btn" href="#">Давайте оба!</a>
+					</div>
+				    <div class="slider-switchers">
+						<input type="radio" class="switch" name="btn-1">
+						<input type="radio" class="switch" name="btn-2">
+						<input type="radio" class="switch" name="btn-3">
+					</div>
+				</div>
+				<div class="banners">
+					<div class="banner banner-left">
+						<p class="banner-title">Малинка даром!</p>
+						<p class="banner-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+						<a class="btn banner-btn" href="#">Хочу варенье!</a>
+					</div>
+					<div class="banner banner-right">
+						<p class="banner-title">Шоколадки даром!</p>
+						<p class="banner-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+						<a class="btn banner-btn" href="#">Хочу шоколадки!</a>
+					</div>
+				</div>
+				<div class="hits">
+					<!-- не знаю точно, как лучше это размечать, по идее весь блок должен быть ссылкой, так я его и делаю, хотя это вроде как и нарушает спек, или нет?, а потом через css поставлю ссылке блочный тип  -->
+					<div class="hit-item">
+						<a class="hit-item-link" href="#">
+							<img src="img/hit.png" width="60" height="60" alt="hit">
+							<img src="img/ice-hit-1.png" width="267" height="267" alt="ice-hit-1">
+							<p class="hit-price">310 р/кг</p>
+							<p class="hit-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+						</a>
+					</div>
+					<div class="hit-item">
+						<a class="hit-item-link" href="#">
+							<img src="img/hit.png" width="60" height="60" alt="hit">
+							<img src="img/ice-hit-2.png" width="267" height="267" alt="ice-hit-2">
+							<p class="hit-price">380 р/кг</p>
+							<p class="hit-name">Сливочно-кофейное с кусочками шоколада</p>
+						</a>
+					</div>
+					<div class="hit-item">
+						<a class="hit-item-link" href="#">
+							<img src="img/hit.png" width="60" height="60" alt="hit">
+							<img src="img/ice-hit-3.png" width="267" height="267" alt="ice-hit-3">
+							<p class="hit-price">355 р/кг</p>
+							<p class="hit-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
+						</a>
+					</div>
+					<div class="hit-item">
+						<a class="hit-item-link" href="#">
+							<img src="img/hit.png" width="60" height="60" alt="hit">
+							<img src="img/ice-hit-4.png" width="267" height="267" alt="ice-hit-4">
+							<p class="hit-price">415 р/кг</p>
+							<p class="hit-name">Сливочное крем-брюле с карамельной подливкой</p>
+						</a>
+					</div>
+				</div>
+				<div class="seo-block">
+					<p class="seo-title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+					<div class="seo-item">
+						<div class="seo-item-img">
+							<img src="img/seo-1.png" width="48" height="48" alt="seo-img-1">
+						</div>
+						<div class="seo-item-text">
+							<p class="seo-item-description">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий </p>
+						</div>
+					</div>
+					<div class="seo-item">
+						<div class="seo-item-img">
+							<img src="img/seo-2.png" width="48" height="48" alt="seo-img-2">
+						</div>
+						<div class="seo-item-text">
+							<p class="seo-item-description">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
+						</div>
+					</div>
+					<div class="seo-item">
+						<div class="seo-item-img">
+							<img src="img/seo-3.png" width="48" height="48" alt="seo-img-3">
+						</div>
+						<div class="seo-item-text">
+							<p class="seo-item-description">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
+						</div>
+					</div>
+					<div class="seo-item">
+						<div class="seo-item-img">
+							<img src="img/seo-4.png" width="48" height="48" alt="seo-img-4">
+						</div>
+						<div class="seo-item-text">
+							<p class="seo-item-description">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</p>
+						</div>
+					</div>
+				</div>
+				<div class="blog-news">
+					<!-- картинку поставлю фоном -->
+					<p class="blog-news-title">Новое в нашем блоге</p>
+					<p class="blog-news-text">10 способов сервировки фруктовых щербетов к столу</p>
+				</div>
+				<div class="mail-distibution">
+					<form class="mail-distibution-form" action="https://echo.htmlacademy.ru" method="post">
+						<p class="mail-distibution-title">Подпишитесь на нашу сладкую рассылку и будете всгда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Чесно =)</p>
+						<input type="text" name="mail-field" value="" placeholder="Электронная почта">
+						<input type="submit" class="btn mail-distibution-btn" value="Отправить">
+					</form>
+				</div>
+			</main>
+			<footer>
+				<div class="map">
+				<!-- сама карта пойдет фоном -->
+					<div class="map=pointer">
+						<img src="img/pointer.jpg" width="80" height="140" alt="pointer">
+					</div>
+					<div class="adress-block">
+						<p class="adress-title">Адрес главного офиса и офлайн магазина</p>
+						<p class="adress-text">ул. Большая Коюшенная 19/8, Санкт-Петербург</p>
+						<p class="phone-title">Для заказов по телефону</p>
+						<p class="phone-number">8 812 450-25-25</p>
+						<p class="phone-comments">(с 10 до 20 ежедневно)</p>
+						<a href="#" class="btn feedback-btm">Форма обратной связи</a>
+					</div>
+				</div>
+				<div class="feedback-form">
+					<form action="https://echo.htmlacademy.ru" method="post">
+					<!-- крестик думаю делать через псевдоэлемент поэтому его в разметке нет -->
+					<p class="feedback-form-title">Мы обязательно вам ответим!</p>
+					<input type="text" name="feedback-name-field" value="" placeholder="Как вас зовут?">
+					<input type="text" name="feedback-mail-field" value="" placeholder="Ваша почта для ответа?">
+					<textarea name="feedback-text-field">Напишите что-нибудь...</textarea>
+					<input type="submit" class="btn feedback-form-btn" value="Отправить">
+					</form>
+				</div>
+				<div class="footer-social">
+					<a class="social-btn social-btn-tw" href="#">twitter</a>
+					<a class="social-btn social-btn-inst" href="#">instagram</a>
+					<a class="social-btn social-btn-fb" href="#">Facebook</a>
+					<a class="social-btn social-btn-vk href="#">Vkontakte</a>
+				</div>
+				<div class="footer-copyright">
+				<div class="footer-common-links">
+				<!-- думал про дополнительные обертки, но решил пока не делать, буду писать CSS - определюсь -->
+					<img src="img/heart.jpg" width="15" height="15" alt="heart">
+					<a class="footer-common-link-item" href="#">Для поставщиков</a>
+					<a class="footer-common-link-item" href="#">О производстве</a>
+					<a class="footer-common-link-item" href="#">Наши документы</a>
+					<a class="footer-common-link-item" href="#">Экологические стандарты</a>
+				</div>
+				<div class="footer-copyright">
+					<a class="btn" href="https://htmlacademy.ru">
+						<img src="img/html-academy.png" alt="HTML Academy">
+					</a>
+					<p>Сделано в HTML Academy © 2016</p>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
