@@ -5,8 +5,8 @@
 		<title>HTML Academy: Глейси</title>
 	</head>
 	<body>
-		<div class="container">
-			<header>
+		<header>
+			<div class="container">
 				<div class="header-left">
 					<img src="img/small-logo.png" width="150" height="75" alt="Gllacy Shop">
 					<nav class="main-navigation">
@@ -55,8 +55,10 @@
 						<p class="contacts-phone">8 812 450-25-25</p>
 					</div>
 				</div>
-			</header>
-			<main>
+			</div>
+		</header>
+		<main>
+			<div class="container">
 				<div class="slider">
 					<div class="slide slide-1">
 						<p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
@@ -172,10 +174,12 @@
 						</form>
 					</div>
 				</div>
-			</main>
-			<footer>
-				<div class="map">
-				<!-- сама карта пойдет фоном -->
+			</div>
+		</main>
+		<footer>
+			<div class="map">
+				<div class="container">
+					<!-- сама карта пойдет фоном -->
 					<div class="map-pointer">
 						<img src="img/pointer.jpg" width="80" height="140" alt="pointer">
 					</div>
@@ -188,27 +192,28 @@
 						<a href="#" class="btn feedback-btm">Форма обратной связи</a>
 					</div>
 				</div>
-				<div class="feedback-form">
-					<form action="https://echo.htmlacademy.ru" method="post">
-					<span class="close-btn"></span>
-					<p class="feedback-form-title">Мы обязательно вам ответим!</p>
-					<label class="feedback-name"> Как вас зовут?
-						<input type="text" name="feedback-name-field" value="">
-					</label>
-					<label class="feedback-mail">
-						<input type="text" name="feedback-mail-field" value="" placeholder="Ваша почта для ответа?">
-					</label>
-					<textarea name="feedback-text-field">Напишите что-нибудь...</textarea>
-					<input type="submit" class="btn feedback-form-btn" value="Отправить">
-					</form>
-				</div>
+			</div>
+			<div class="feedback-form">
+				<form action="https://echo.htmlacademy.ru" method="post">
+				<span class="close-btn"></span>
+				<p class="feedback-form-title">Мы обязательно вам ответим!</p>
+				<label class="feedback-name"> Как вас зовут?
+					<input type="text" name="feedback-name-field" value="">
+				</label>
+				<label class="feedback-mail">
+					<input type="text" name="feedback-mail-field" value="" placeholder="Ваша почта для ответа?">
+				</label>
+				<textarea name="feedback-text-field">Напишите что-нибудь...</textarea>
+				<input type="submit" class="btn feedback-form-btn" value="Отправить">
+				</form>
+			</div>
+			<div class="container">
 				<div class="footer-social">
 					<a class="social-btn social-btn-tw" href="#">twitter</a>
 					<a class="social-btn social-btn-inst" href="#">instagram</a>
 					<a class="social-btn social-btn-fb" href="#">Facebook</a>
 					<a class="social-btn social-btn-vk" href="#">Vkontakte</a>
 				</div>
-				<div class="footer-copyright">
 				<div class="footer-common-links">
 				<!-- думал про дополнительные обертки, но решил пока не делать, буду писать CSS - определюсь -->
 					<img src="img/heart.jpg" width="15" height="15" alt="heart">
@@ -223,7 +228,7 @@
 					</a>
 					<p>Сделано в HTML Academy © 2016</p>
 				</div>
-			</footer>
-		</div>
+			</div>
+		</footer>
 	</body>
 </html>
