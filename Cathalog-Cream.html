@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Глейси</title>
+	</head>
+	<body>
+		<header class="cathalog-cream-header">
+			<div class="container">
+				<div class="header-left">
+					<a href="index.html">
+						<img src="img/small-logo.png" width="150" height="75" alt="Gllacy Shop">
+					</a>
+					<nav class="main-navigation">
+						<ul class="main-menu">
+							<li><a href="#">Каталог</a></li>
+								<ul class="sub-menu">
+									<li><a href="#">Новинки</a></li>
+									<li class="current-page">Сливочное</li>
+									<li><a href="#">Щербеты</a></li>
+									<li><a href="#">Фруктовый лед</a></li>
+									<li><a href="#">Мелорин</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">О Компании</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-right">
+					<div class="search-block">
+						<a href="#" class="btn search"></a>
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+							<input type="search" name="What-Find" value="" placeholder="Что ищем?">
+						</form>
+					</div>
+					<div class="enter-block">
+						<a href="#" class="btn enter">Вход</a>
+						<form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
+							<label class="login">Электронная почта
+								<input type="text" name="login-field" value="">
+							</label>
+							<label class="password">Пароль
+								<input type="password" name="password-field" value="">
+							</label>
+							<input type="submit" value="Войти">
+							<a href="#" class="btn enter-form-forgot">Забыли пароль?</a>
+							<a href="#" class="btn enter-form-registry">Новая регистрация</a>
+						</form>
+					</div>
+					<div class="basket-block">
+					<!-- Можно ли следующий блок оставить так или нужно уже к джаваскрипту привязываться? -->
+						<a href="#" class="btn basket-full">2 товара</a>
+					</div>
+					<div class="contacts-block">
+						<p class="contacts-time">C 10 до 20, ежедневно</p>
+						<p class="contacts-phone">8 812 450-25-25</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="cathalog-cream-main">
+			<div class="bread"> <!-- :) -->
+				<ul class="breadcrumbs">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li class="current-crumb">Сливочное</li>
+				</ul>
+			</div>
+			<div class="cathalog-cream-title">
+				<p>Сливочное мороженое</p>
+			</div>
+			<div class="cathalog-cream-filter">
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<fieldset class="cathalog-filter-item-label">
+						<legend class="cathalog-filter-legend">Сортировка:</legend>
+						<select name="sort" class="cathalog-filter-list">
+							<option value="popularity">по популярности</option>
+							<option value="cheap">сначала недорогие</option>
+							<option value="costly">сначала дорогие</option>
+							<option value="fatness">по жирности</option>
+						</select>
+					</fieldset>
+					<fieldset class="cathalog-filter-item-label>
+						<legend class="cathalog-filter-legend">Цена:</legend>
+						<div class="price-controls">
+							<label class="min-price"><input type="text" name="min-price" value="100">руб.</label>
+							<label class="max-price"><input type="text" name="max-price" value="500">руб.</label>
+						</div>
+						<div class="range-controls">
+							<div class="price-scale">
+								<div class="price-bar"></div>
+							</div>	
+							<div class="point min-point"></div>
+							<div class="point max-point"></div>
+						</div>
+					</fieldset>
+					<fieldset class="cathalog-filter-item-label">
+						<legend class="cathalog-filter-legend">Жирность:</legend>
+						<label class="cathalog-filter-item-text">
+							<input type="radio" name="fatness-field" id="fatness-0" value="0">
+							<span class="radio-indicator"></span>
+							0%
+						</label>
+						<label class="cathalog-filter-item-text">
+							<input type="radio" name="fatness-field" id="fatness-10" value="10">
+							<span class="radio-indicator"></span>
+							до 10%
+						</label>
+						<label class="cathalog-filter-item-text">
+							<input type="radio" name="fatness-field" id="fatness-30" value="30">
+							<span class="radio-indicator"></span>
+							до 30%
+						</label>
+						<label class="cathalog-filter-item-text">
+							<input type="radio" name="fatness-field" id="fatness-30+" value="30+">
+							<span class="radio-indicator"></span>
+							выше 30%
+						</label>
+					</fieldset>
+					<fieldset class="cathalog-filter-item-label">
+						<legend class="cathalog-filter-legend">Наполнители:</legend>
+						<label class="cathalog-filter-item-text">
+							<input type="checkbox" name="choco-field" id="chocko" checked>
+							<span class="checkbox-indicator"></span>
+							шоколадные
+						</label>
+						<label class="cathalog-filter-item-text">
+							<input type="checkbox" name="sugar-field" id="sugar" checked>
+							<span class="checkbox-indicator"></span>
+							сахарные присыпки
+						</label>
+						<label class="cathalog-filter-item-text">
+							<input type="checkbox" name="fruit-field" id="fruit">
+							<span class="checkbox-indicator"></span>
+							фрукты
+						</label>
+						<label class="cathalog-filter-item-text">
+							<input type="checkbox" name="sirup-field" id="sirup">
+							<span class="checkbox-indicator"></span>
+							сиропы
+						</label>
+						<label class="cathalog-filter-item-text">
+							<input type="checkbox" name="jam-field" id="jam">
+							<span class="checkbox-indicator"></span>
+							джем
+						</label>
+						<a type="Submit" class="btn btn-transparent" name="use" id="use-button">Применить</a>
+					</fieldset>
+				</form>
+			</div>
+		</main>
+		<footer class="cathalog-cream-footer">
+			<div class="container">
+				<div class="footer-social">
+					<a class="social-btn social-btn-tw" href="#">twitter</a>
+					<a class="social-btn social-btn-inst" href="#">instagram</a>
+					<a class="social-btn social-btn-fb" href="#">Facebook</a>
+					<a class="social-btn social-btn-vk" href="#">Vkontakte</a>
+				</div>
+				<div class="footer-common-links">
+					<img src="img/heart.jpg" width="15" height="15" alt="heart">
+					<a class="footer-common-link-item" href="#">Для поставщиков</a>
+					<a class="footer-common-link-item" href="#">О производстве</a>
+					<a class="footer-common-link-item" href="#">Наши документы</a>
+					<a class="footer-common-link-item" href="#">Экологические стандарты</a>
+				</div>
+				<div class="footer-copyright">
+					<a class="btn" href="https://htmlacademy.ru">
+						<img src="img/html-academy.png" alt="HTML Academy">
+					</a>
+					<p>Сделано в HTML Academy © 2016</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
