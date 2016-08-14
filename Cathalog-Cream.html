@@ -6,6 +6,7 @@
 	</head>
 	<body>
 		<header class="cathalog-cream-header">
+		<!-- Контейнер можно и общий, но я сделал 3 разных для каждой части, по аналогии с главной -->
 			<div class="container">
 				<div class="header-left">
 					<a href="index.html">
@@ -49,105 +50,295 @@
 						</form>
 					</div>
 					<div class="basket-block">
-					<!-- Можно ли следующий блок оставить так или нужно уже к джаваскрипту привязываться? -->
+			<!-- Можно ли следующий блок оставить так или нужно уже к джаваскрипту привязываться? -->
 						<a href="#" class="btn basket-full">2 товара</a>
 					</div>
 					<div class="contacts-block">
 						<p class="contacts-time">C 10 до 20, ежедневно</p>
 						<p class="contacts-phone">8 812 450-25-25</p>
 					</div>
+					<div class="basket">
+					<!-- сначал думал эту штуку делать на дивах -но потом посмотрел, что это же чистая таблица и сделал ее таблицей -->
+						<table class="basket-table">
+							<tr class="basket-table-row">
+								<td class="basket-table-column-1"><span class="delete-btn"></span></td>
+								<td class="basket-table-column-2"><img src="img/plombier-product-11.png" width="33" height="33" alt="plombier-product-11"></td>
+								<td class="basket-table-column-3">Пломбир с апельсиновым джемом</td>
+								<td class="basket-table-column-4">1,5 кг х</td>
+								<td class="basket-table-column-5">200 руб.</td>
+								<td class="basket-table-column-6">300 руб.</td>
+							</tr>
+							<tr class="basket-table-row">
+								<td class="basket-table-column-1"><span class="delete-btn"></span></td>
+								<td class="basket-table-column-2"><img src="img/plombier-product-11.png" width="33" height="33" alt="plombier-product-11"></td>
+								<td class="basket-table-column-3">Клубничный пломбир с присыпкой из белого шоколада</td>
+								<td class="basket-table-column-4">1,5 кг х</td>
+								<td class="basket-table-column-5">300 руб.</td>
+								<td class="basket-table-column-6">450 руб.</td>
+							</tr>
+							<tr class="basket-table-row">
+								<td class="basket-table-column-common" colspan="6">Итого:750 руб.</td>
+							</tr>
+						</table>
+						<!-- тут у меня было 2 варианта: либо <button type="submit", либо <a>. Решил, что раз это не форма, то пусть будет <a> -->
+						<a class="btn order-drow-btn">Оформить заказ</a>
+					</div>
 				</div>
 			</div>
 		</header>
 		<main class="cathalog-cream-main">
-			<div class="bread"> <!-- :) -->
-				<ul class="breadcrumbs">
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="#">Каталог</a></li>
-					<li class="current-crumb">Сливочное</li>
-				</ul>
-			</div>
-			<div class="cathalog-cream-title">
-				<p>Сливочное мороженое</p>
-			</div>
-			<div class="cathalog-cream-filter">
-				<form action="https://echo.htmlacademy.ru" method="post">
-					<fieldset class="cathalog-filter-item-label">
-						<legend class="cathalog-filter-legend">Сортировка:</legend>
-						<select name="sort" class="cathalog-filter-list">
-							<option value="popularity">по популярности</option>
-							<option value="cheap">сначала недорогие</option>
-							<option value="costly">сначала дорогие</option>
-							<option value="fatness">по жирности</option>
-						</select>
-					</fieldset>
-					<fieldset class="cathalog-filter-item-label>
-						<legend class="cathalog-filter-legend">Цена:</legend>
-						<div class="price-controls">
-							<label class="min-price"><input type="text" name="min-price" value="100">руб.</label>
-							<label class="max-price"><input type="text" name="max-price" value="500">руб.</label>
+			<div class="container">
+				<div class="bread"> <!-- :) -->
+					<ul class="breadcrumbs">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li class="current-crumb">Сливочное</li>
+					</ul>
+				</div>
+				<div class="cathalog-cream-title">
+					<p>Сливочное мороженое</p>
+				</div>
+				<div class="cathalog-cream-filter">
+					<form action="https://echo.htmlacademy.ru" method="post">
+						<fieldset class="cathalog-filter-item-label">
+							<legend class="cathalog-filter-legend">Сортировка:</legend>
+							<select name="sort" class="cathalog-filter-list">
+								<option value="popularity">по популярности</option>
+								<option value="cheap">сначала недорогие</option>
+								<option value="costly">сначала дорогие</option>
+								<option value="fatness">по жирности</option>
+							</select>
+						</fieldset>
+						<fieldset class="cathalog-filter-item-label">
+							<legend class="cathalog-filter-legend">Цена:</legend>
+							<div class="price-controls">
+								<label class="min-price"><input type="text" name="min-price" value="100">руб.</label>
+								<label class="max-price"><input type="text" name="max-price" value="500">руб.</label>
+							</div>
+							<div class="range-controls">
+								<div class="price-scale">
+									<div class="price-bar"></div>
+								</div>	
+								<div class="point min-point"></div>
+								<div class="point max-point"></div>
+							</div>
+						</fieldset>
+						<fieldset class="cathalog-filter-item-label">
+							<legend class="cathalog-filter-legend">Жирность:</legend>
+							<label class="cathalog-filter-item-text">
+								<input type="radio" name="fatness-field" id="fatness-0" value="0">
+								<span class="radio-indicator"></span>
+								0%
+							</label>
+							<label class="cathalog-filter-item-text">
+								<input type="radio" name="fatness-field" id="fatness-10" value="10">
+								<span class="radio-indicator"></span>
+								до 10%
+							</label>
+							<label class="cathalog-filter-item-text">
+								<input type="radio" name="fatness-field" id="fatness-30" value="30">
+								<span class="radio-indicator"></span>
+								до 30%
+							</label>
+							<label class="cathalog-filter-item-text">
+								<input type="radio" name="fatness-field" id="fatness-30+" value="30+">
+								<span class="radio-indicator"></span>
+								выше 30%
+							</label>
+						</fieldset>
+						<fieldset class="cathalog-filter-item-label">
+							<legend class="cathalog-filter-legend">Наполнители:</legend>
+							<label class="cathalog-filter-item-text">
+								<input type="checkbox" name="choco-field" id="chocko" checked>
+								<span class="checkbox-indicator"></span>
+								шоколадные
+							</label>
+							<label class="cathalog-filter-item-text">
+								<input type="checkbox" name="sugar-field" id="sugar" checked>
+								<span class="checkbox-indicator"></span>
+								сахарные присыпки
+							</label>
+							<label class="cathalog-filter-item-text">
+								<input type="checkbox" name="fruit-field" id="fruit">
+								<span class="checkbox-indicator"></span>
+								фрукты
+							</label>
+							<label class="cathalog-filter-item-text">
+								<input type="checkbox" name="sirup-field" id="sirup">
+								<span class="checkbox-indicator"></span>
+								сиропы
+							</label>
+							<label class="cathalog-filter-item-text">
+								<input type="checkbox" name="jam-field" id="jam">
+								<span class="checkbox-indicator"></span>
+								джем
+							</label>
+						</fieldset>
+						<input type="Submit" class="btn btn-transparent" name="use" id="use-button">Применить</input>
+					</form>
+				</div>
+				<div class="products-cathalog">
+			<!-- Я не уверен понадобится ли мне дополнительный класс  row-№, но на всякий случай его вставил -->
+					<div class="products-row row-1">
+						<div class="product-item">
+							<a class="product-item-link" href="#">
+								<img src="img/cream-product-11.png" width="267" height="267" alt="cream-product-11">
+								<span class="product-price">310</span>
+								<img src="img/rubl.png" width="25" height="30" alt="P">
+								<span class="per-weight">/кг</span>
+								<p class="product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+							</a>
+							<div class="quick-view">
+								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
-						<div class="range-controls">
-							<div class="price-scale">
-								<div class="price-bar"></div>
-							</div>	
-							<div class="point min-point"></div>
-							<div class="point max-point"></div>
+						<div class="product-item">
+							<a class="product-item-link" href="#">
+								<img src="img/cream-product-12.png" width="267" height="267" alt="cream-product-12">
+								<span class="product-price">380</span>
+								<img src="img/rubl.png" width="25" height="30" alt="P">
+								<span class="per-weight">/кг</span>
+								<p class="product-name">Сливочно-кофейное с кусочками шоколада</p>
+							</a>
+							<div class="quick-view">
+								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
-					</fieldset>
-					<fieldset class="cathalog-filter-item-label">
-						<legend class="cathalog-filter-legend">Жирность:</legend>
-						<label class="cathalog-filter-item-text">
-							<input type="radio" name="fatness-field" id="fatness-0" value="0">
-							<span class="radio-indicator"></span>
-							0%
-						</label>
-						<label class="cathalog-filter-item-text">
-							<input type="radio" name="fatness-field" id="fatness-10" value="10">
-							<span class="radio-indicator"></span>
-							до 10%
-						</label>
-						<label class="cathalog-filter-item-text">
-							<input type="radio" name="fatness-field" id="fatness-30" value="30">
-							<span class="radio-indicator"></span>
-							до 30%
-						</label>
-						<label class="cathalog-filter-item-text">
-							<input type="radio" name="fatness-field" id="fatness-30+" value="30+">
-							<span class="radio-indicator"></span>
-							выше 30%
-						</label>
-					</fieldset>
-					<fieldset class="cathalog-filter-item-label">
-						<legend class="cathalog-filter-legend">Наполнители:</legend>
-						<label class="cathalog-filter-item-text">
-							<input type="checkbox" name="choco-field" id="chocko" checked>
-							<span class="checkbox-indicator"></span>
-							шоколадные
-						</label>
-						<label class="cathalog-filter-item-text">
-							<input type="checkbox" name="sugar-field" id="sugar" checked>
-							<span class="checkbox-indicator"></span>
-							сахарные присыпки
-						</label>
-						<label class="cathalog-filter-item-text">
-							<input type="checkbox" name="fruit-field" id="fruit">
-							<span class="checkbox-indicator"></span>
-							фрукты
-						</label>
-						<label class="cathalog-filter-item-text">
-							<input type="checkbox" name="sirup-field" id="sirup">
-							<span class="checkbox-indicator"></span>
-							сиропы
-						</label>
-						<label class="cathalog-filter-item-text">
-							<input type="checkbox" name="jam-field" id="jam">
-							<span class="checkbox-indicator"></span>
-							джем
-						</label>
-						<a type="Submit" class="btn btn-transparent" name="use" id="use-button">Применить</a>
-					</fieldset>
-				</form>
+						<div class="product-item">
+							<a class="product-item-link" href="#">
+								<img src="img/cream-product-13.png" width="267" height="267" alt="cream-product-13">
+								<span class="product-price">355</span>
+								<img src="img/rubl.png" width="25" height="30" alt="P">
+								<span class="per-weight">/кг</span>
+								<p class="product-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
+							</a>
+							<div class="quick-view">
+								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+							</div>
+						</div>
+						<div class="product-item">
+							<a class="product-item-link" href="#">
+								<img src="img/cream-product-14.png" width="267" height="267" alt="cream-product-14">
+								<span class="product-price">415</span>
+								<img src="img/rubl.png" width="25" height="30" alt="P">
+								<span class="per-weight">/кг</span>
+								<p class="product-name">Сливочное крем-брюле с карамельной подливкой</p>
+							</a>
+							<div class="quick-view">
+								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+							</div>
+						</div>	
+					</div>
+					<div class="products-row row-2">
+						<div class="product-item">
+							<a class="product-item-link" href="#">
+								<img src="img/cream-product-21.png" width="267" height="267" alt="cream-product-21">
+								<span class="product-price">325</span>
+								<img src="img/rubl.png" width="25" height="30" alt="P">
+								<span class="per-weight">/кг</span>
+								<p class="product-name">Сливочное с брусничным джемом</p>
+							</a>
+							<div class="quick-view">
+								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+							</div>
+						</div>
+						<div class="product-item">
+							<a class="product-item-link" href="#">
+								<img src="img/cream-product-22.png" width="267" height="267" alt="cream-product-22">
+								<span class="product-price">410 </span>
+								<img src="img/rubl.png" width="25" height="30" alt="P">
+								<span class="per-weight">/кг</span>
+								<p class="product-name">Сливочно-черничное с цельными ягодами черники</p>
+							</a>
+							<div class="quick-view">
+								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+							</div>
+						</div>
+						<div class="product-item">
+							<a class="product-item-link" href="#">
+								<img src="img/cream-product-23.png" width="267" height="267" alt="cream-product-23">
+								<span class="product-price">375 </span>
+								<img src="img/rubl.png" width="25" height="30" alt="P">
+								<span class="per-weight">/кг</span>
+								<p class="product-name">Сливочно-лимонное с карамельной присыпкой</p>
+							</a>
+							<div class="quick-view">
+								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+							</div>
+						</div>
+						<div class="product-item">
+							<a class="product-item-link" href="#">
+								<img src="img/cream-product-24.png" width="267" height="267" alt="cream-product-24">
+								<span class="product-price">320 </span>
+								<img src="img/rubl.png" width="25" height="30" alt="P">
+								<span class="per-weight">/кг</span>
+								<p class="product-name">Сливочное с шоколадной стружкой</p>
+							</a>
+							<div class="quick-view">
+								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+							</div>
+						</div>	
+					</div>
+					<div class="products-row row-3">
+						<div class="product-item">
+							<a class="product-item-link" href="#">
+								<img src="img/cream-product-31.png" width="267" height="267" alt="cream-product-31">
+								<span class="product-price">440</span>
+								<img src="img/rubl.png" width="25" height="30" alt="P">
+								<span class="per-weight">/кг</span>
+								<p class="product-name">Сливочно-ванильное с кусочками шоколада</p>
+							</a>
+							<div class="quick-view">
+								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+							</div>
+						</div>
+						<div class="product-item">
+							<a class="product-item-link" href="#">
+								<img src="img/cream-product-32.png" width="267" height="267" alt="cream-product-32">
+								<span class="product-price">435 </span>
+								<img src="img/rubl.png" width="25" height="30" alt="P">
+								<span class="per-weight">/кг</span>
+								<p class="product-name">Сливочное с ментоловым сиропом</p>
+							</a>
+							<div class="quick-view">
+								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+							</div>
+						</div>
+						<div class="product-item">
+							<a class="product-item-link" href="#">
+								<img src="img/cream-product-33.png" width="267" height="267" alt="cream-product-33">
+								<span class="product-price">355 </span>
+								<img src="img/rubl.png" width="25" height="30" alt="P">
+								<span class="per-weight">/кг</span>
+								<p class="product-name">Сливочное с кусочками черного шоколада</p>
+							</a>
+							<div class="quick-view">
+								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+							</div>
+						</div>
+						<div class="product-item">
+							<a class="product-item-link" href="#">
+								<img src="img/cream-product-34.png" width="267" height="267" alt="cream-product-34">
+								<span class="product-price">420 </span>
+								<img src="img/rubl.png" width="25" height="30" alt="P">
+								<span class="per-weight">/кг</span>
+								<p class="product-name">Сливочное с мятным сиропом</p>
+							</a>
+							<div class="quick-view">
+								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="paginator">
+					<a href="#prev" class="paginator-passive">&#706;</a>
+					<a href="#1" class="paginator-current">1</a>
+					<a href="#2" class="paginator-active">2</a>
+					<a href="#3" class="paginator-active">3</a>
+					<a href="#4" class="paginator-active">4</a>
+					<a href="#5" class="paginator-active">5</a>
+					<a href="#next" class="paginator-active">&#707;</a>
+				</div>
 			</div>
 		</main>
 		<footer class="cathalog-cream-footer">
