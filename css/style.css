@@ -1,0 +1,22 @@
+body{
+	font-family:"Roboto-medium", "Arial", sans-serif;
+	font-weight:normal;
+	font-size:16px;
+	line-height:22px;
+	color:#ffffff;
+}
+.seo-title{
+	font-size:24px;
+	line-height:30px;
+	color:#323232;
+}
+.blog-news-title{
+	font-weight:bold;
+	font-size:24px;
+	line-height:30px;
+	color:#323232;
+	text-decoration:underline;
+}
+.seo-item-description{
+	color:#323232;
+}
