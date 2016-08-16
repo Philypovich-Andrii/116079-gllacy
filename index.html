@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet">
 	</head>
 	<body>
-		<header>
-			<div class="container">
+		<div class="container">
+			<header>
 				<div class="header-left">
-					<img src="img/small-logo.png" width="150" height="75" alt="Gllacy Shop">
+					<img src="img/small-logo.png" width="154" height="64" alt="GllacyShop">
 					<nav class="main-navigation">
 						<ul class="main-menu">
 							<li><a href="#">Каталог</a></li>
@@ -27,13 +28,13 @@
 				</div>
 				<div class="header-right">
 					<div class="search-block">
-						<a href="#" class="btn search"></a>
+						<a href="#" class="search-btn"></a>
 						<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
 							<input type="search" name="What-Find" value="" placeholder="Что ищем?">
 						</form>
 					</div>
 					<div class="enter-block">
-						<a href="#" class="btn enter">Вход</a>
+						<a href="#" class="enter-btn">Вход</a>
 						<form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
 							<label class="login">Электронная почта
 								<input type="text" name="login-field" value="">
@@ -48,17 +49,15 @@
 					</div>
 					<!-- Это вставил в отдельные блоки с целью единообразия кода в блоке "header-right" - я его разбиваю на 4 части, каждую оборачиваю в div. Впрочем - это вопрос для обсуждения -->
 					<div class="basket-block">
-						<a href="#" class="btn basket">Пусто</a>
+						<a href="#" class="basket-btn">Пусто</a>
 					</div>
 					<div class="contacts-block">
 						<p class="contacts-time">C 10 до 20, ежедневно</p>
 						<p class="contacts-phone">8 812 450-25-25</p>
 					</div>
 				</div>
-			</div>
-		</header>
-		<main>
-			<div class="container">
+			</header>
+			<main>
 				<div class="slider">
 					<div class="slide slide-1">
 						<p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
@@ -94,8 +93,8 @@
 					<!-- не знаю точно, как лучше это размечать, по идее весь блок должен быть ссылкой, так я его и делаю, хотя это вроде как и нарушает спек, или нет?, а потом через css поставлю ссылке блочный тип  -->
 					<div class="product-item">
 						<a class="product-item-link" href="#">
-							<img src="img/hit.png" width="60" height="60" alt="hit">
-							<img src="img/cream-product-11.png" width="267" height="267" alt="cream-product-11">
+							<img src="img/hit.jpg" width="60" height="60" alt="hit">
+							<img src="img/cream-product-11.jpg" width="267" height="267" alt="cream-product-11">
 							<span class="product-price">310</span>
 							<img src="img/rubl.png" width="25" height="30" alt="P">
 							<span class="per-weight">/кг</span>
@@ -107,8 +106,8 @@
 					</div>
 					<div class="product-item">
 						<a class="product-item-link" href="#">
-							<img src="img/hit.png" width="60" height="60" alt="hit">
-							<img src="img/cream-product-12.png" width="267" height="267" alt="cream-product-12">
+							<img src="img/hit.jpg" width="60" height="60" alt="hit">
+							<img src="img/cream-product-12.jpg" width="267" height="267" alt="cream-product-12">
 							<span class="product-price">380</span>
 							<img src="img/rubl.png" width="25" height="30" alt="P">
 							<span class="per-weight">/кг</span>
@@ -120,8 +119,8 @@
 					</div>
 					<div class="product-item">
 						<a class="product-item-link" href="#">
-							<img src="img/hit.png" width="60" height="60" alt="hit">
-							<img src="img/cream-product-13.png" width="267" height="267" alt="cream-product-13">
+							<img src="img/hit.jpg" width="60" height="60" alt="hit">
+							<img src="img/cream-product-13.jpg" width="267" height="267" alt="cream-product-13">
 							<span class="product-price">355</span>
 							<img src="img/rubl.png" width="25" height="30" alt="P">
 							<span class="per-weight">/кг</span>
@@ -133,8 +132,8 @@
 					</div>
 					<div class="product-item">
 						<a class="product-item-link" href="#">
-							<img src="img/hit.png" width="60" height="60" alt="hit">
-							<img src="img/cream-product-14.png" width="267" height="267" alt="cream-product-14">
+							<img src="img/hit.jpg" width="60" height="60" alt="hit">
+							<img src="img/cream-product-14.jpg" width="267" height="267" alt="cream-product-14">
 							<span class="product-price">415</span>
 							<img src="img/rubl.png" width="25" height="30" alt="P">
 							<span class="per-weight">/кг</span>
@@ -149,7 +148,7 @@
 					<p class="seo-title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
 					<div class="seo-item">
 						<div class="seo-item-img">
-							<img src="img/seo-1.png" width="48" height="48" alt="seo-img-1">
+							<img src="img/seo-ice.png" width="48" height="48" alt="seo-img-1">
 						</div>
 						<div class="seo-item-text">
 							<p class="seo-item-description">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий </p>
@@ -157,7 +156,7 @@
 					</div>
 					<div class="seo-item">
 						<div class="seo-item-img">
-							<img src="img/seo-2.png" width="48" height="48" alt="seo-img-2">
+							<img src="img/seo-leaf.png" width="48" height="48" alt="seo-img-2">
 						</div>
 						<div class="seo-item-text">
 							<p class="seo-item-description">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
@@ -165,7 +164,7 @@
 					</div>
 					<div class="seo-item">
 						<div class="seo-item-img">
-							<img src="img/seo-3.png" width="48" height="48" alt="seo-img-3">
+							<img src="img/seo-cow.png" width="48" height="48" alt="seo-img-3">
 						</div>
 						<div class="seo-item-text">
 							<p class="seo-item-description">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
@@ -173,7 +172,7 @@
 					</div>
 					<div class="seo-item">
 						<div class="seo-item-img">
-							<img src="img/seo-4.png" width="48" height="48" alt="seo-img-4">
+							<img src="img/seo-thermometer.png" width="48" height="48" alt="seo-img-4">
 						</div>
 						<div class="seo-item-text">
 							<p class="seo-item-description">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</p>
@@ -194,40 +193,38 @@
 						</form>
 					</div>
 				</div>
-			</div>
-			<div class="map">
-				<div class="container">
-					<!-- сама карта пойдет фоном -->
-					<div class="map-pointer">
-						<img src="img/pointer.jpg" width="80" height="140" alt="pointer">
-					</div>
-					<div class="adress-block">
-						<p class="adress-title">Адрес главного офиса и офлайн магазина</p>
-						<p class="adress-text">ул. Большая Коюшенная 19/8, Санкт-Петербург</p>
-						<p class="phone-title">Для заказов по телефону</p>
-						<a class="phone-number" href="8 812 450 25 25">8 812 450-25-25</a>
-						<p class="phone-comments">(с 10 до 20 ежедневно)</p>
-						<a href="#" class="btn feedback-btm">Форма обратной связи</a>
-					</div>
+				<div class="feedback-form">
+					<form action="https://echo.htmlacademy.ru" method="post">
+					<span class="close-btn"></span>
+					<p class="feedback-form-title">Мы обязательно вам ответим!</p>
+					<label class="feedback-name"> Как вас зовут?
+						<input type="text" name="feedback-name-field" value="">
+					</label>
+					<label class="feedback-mail">
+						<input type="text" name="feedback-mail-field" value="" placeholder="Ваша почта для ответа?">
+					</label>
+					<textarea name="feedback-text-field">Напишите что-нибудь...</textarea>
+					<input type="submit" class="btn feedback-form-btn" value="Отправить">
+					</form>
 				</div>
+			</main>
+		</div>
+		<div class="map">
+			<!-- сама карта пойдет фоном -->
+			<div class="map-pointer">
+				<img src="img/map-pointer.png" width="80" height="140" alt="pointer">
 			</div>
-			<div class="feedback-form">
-				<form action="https://echo.htmlacademy.ru" method="post">
-				<span class="close-btn"></span>
-				<p class="feedback-form-title">Мы обязательно вам ответим!</p>
-				<label class="feedback-name"> Как вас зовут?
-					<input type="text" name="feedback-name-field" value="">
-				</label>
-				<label class="feedback-mail">
-					<input type="text" name="feedback-mail-field" value="" placeholder="Ваша почта для ответа?">
-				</label>
-				<textarea name="feedback-text-field">Напишите что-нибудь...</textarea>
-				<input type="submit" class="btn feedback-form-btn" value="Отправить">
-				</form>
+			<div class="adress-block">
+				<p class="adress-title">Адрес главного офиса и офлайн магазина</p>
+				<p class="adress-text">ул. Большая Коюшенная 19/8, Санкт-Петербург</p>
+				<p class="phone-title">Для заказов по телефону</p>
+				<a class="phone-number" href="8 812 450 25 25">8 812 450-25-25</a>
+				<p class="phone-comments">(с 10 до 20 ежедневно)</p>
+				<a href="#" class="btn feedback-btm">Форма обратной связи</a>
 			</div>
-		</main>
-		<footer>
-			<div class="container">
+		</div>
+		<div class="container">
+			<footer>
 				<div class="footer-social">
 					<a class="social-btn social-btn-tw" href="#">twitter</a>
 					<a class="social-btn social-btn-inst" href="#">instagram</a>
@@ -243,12 +240,12 @@
 					<a class="footer-common-link-item" href="#">Экологические стандарты</a>
 				</div>
 				<div class="footer-copyright">
-					<a class="btn" href="https://htmlacademy.ru">
+					<a class="btn btn-copyright" href="https://htmlacademy.ru">
 						<img src="img/html-academy.png" alt="HTML Academy">
 					</a>
 					<p>Сделано в HTML Academy © 2016</p>
 				</div>
-			</div>
-		</footer>
+			</footer>		
+		</div>
 	</body>
 </html>

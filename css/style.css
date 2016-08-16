@@ -4,7 +4,65 @@ body{
 	font-size:16px;
 	line-height:22px;
 	color:#ffffff;
+	width:1200px;
+	box-sizing:border-box;
+	background-color:#849d8f;
+	outline: 1px solid black;
 }
+/* "Сброс маргинов и паддингов" */
+p, ul{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style:none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* центровщик */
+.container {
+	outline: 2px solid red;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 2.3%;
+	margin-right: 2.3%;
+}
+/* центровщик */
+/* header */
+header{
+	min-height:115px;
+	display: flex;
+	justify-content: space-between;
+}
+  .header-left{
+  	display:flex;
+  	justify-content:flex-start;
+  	outline: 1px solid blue;
+  }
+	.main-menu{
+		display:flex;
+		justify-content:flex-start;
+		outline: 1px solid blue;
+    }
+
+  .header-right{
+	 display:flex;
+	 justify-content: flex-end;
+	 flex-wrap:wrap;
+	 outline: 1px solid blue;
+  }
+.sub-menu{
+	display:none;
+}
+.search-form{
+	display:none;
+}
+.enter-form{
+	display:none;
+}
+/*  header */
 .seo-title{
 	font-size:24px;
 	line-height:30px;
