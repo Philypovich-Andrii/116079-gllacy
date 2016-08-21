@@ -7,12 +7,12 @@
 	</head>
 	<body>
 		<div class="container">
-			<header>
+			<header class="index-header">
 				<div class="header-left">
 					<img src="img/small-logo.png" width="154" height="64" alt="GllacyShop">
 					<nav class="main-navigation">
 						<ul class="main-menu">
-							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Каталог</a>
 								<ul class="sub-menu">
 									<li><a href="#">Новинки</a></li>
 									<li><a href="Cathalog-Cream.html">Сливочное</a></li>
@@ -47,7 +47,6 @@
 							<a href="#" class="btn enter-form-registry">Новая регистрация</a>
 						</form>
 					</div>
-					<!-- Это вставил в отдельные блоки с целью единообразия кода в блоке "header-right" - я его разбиваю на 4 части, каждую оборачиваю в div. Впрочем - это вопрос для обсуждения -->
 					<div class="basket-block">
 						<a href="#" class="basket-btn">Пусто</a>
 					</div>
@@ -57,7 +56,7 @@
 					</div>
 				</div>
 			</header>
-			<main>
+			<main class="index-main">
 				<div class="slider">
 					<div class="slide slide-1">
 						<p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
@@ -92,55 +91,47 @@
 				<div class="products-row hits">
 					<!-- не знаю точно, как лучше это размечать, по идее весь блок должен быть ссылкой, так я его и делаю, хотя это вроде как и нарушает спек, или нет?, а потом через css поставлю ссылке блочный тип  -->
 					<div class="product-item">
-						<a class="product-item-link" href="#">
-							<img src="img/hit.jpg" width="60" height="60" alt="hit">
-							<img src="img/cream-product-11.jpg" width="267" height="267" alt="cream-product-11">
-							<span class="product-price">310</span>
-							<img src="img/rubl.png" width="25" height="30" alt="P">
-							<span class="per-weight">/кг</span>
-							<p class="product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-						</a>
-						<div class="quick-view">
-								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+						<img src="img/hit.jpg" class="hit-img" width="60" height="60" alt="hit">
+						<img src="img/cream-product-11.jpg" class="product-item-img" width="267" height="267" alt="cream-product-11">
+						<span class="product-price">310</span>
+						<img src="img/rubl.png" class="rubl-img" width="25" height="30" alt="P">
+						<span class="per-weight">/кг</span>
+						<p class="product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+						<div class="product-quick-view">
+							<a class="btn product-quick-view-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</div>
 					<div class="product-item">
-						<a class="product-item-link" href="#">
-							<img src="img/hit.jpg" width="60" height="60" alt="hit">
-							<img src="img/cream-product-12.jpg" width="267" height="267" alt="cream-product-12">
-							<span class="product-price">380</span>
-							<img src="img/rubl.png" width="25" height="30" alt="P">
-							<span class="per-weight">/кг</span>
-							<p class="product-name">Сливочно-кофейное с кусочками шоколада</p>
-						</a>
-						<div class="quick-view">
-								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+						<img src="img/hit.jpg" class="hit-img" width="60" height="60" alt="hit">
+						<img src="img/cream-product-12.jpg" class="product-item-img" width="267" height="267" alt="cream-product-12">
+						<span class="product-price">380</span>
+						<img src="img/rubl.png" class="rubl-img" width="25" height="30" alt="P">
+						<span class="per-weight">/кг</span>
+						<p class="product-name">Сливочно-кофейное с кусочками шоколада</p>
+						<div class="product-quick-view">
+							<a class="btn product-quick-view-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</div>
 					<div class="product-item">
-						<a class="product-item-link" href="#">
-							<img src="img/hit.jpg" width="60" height="60" alt="hit">
-							<img src="img/cream-product-13.jpg" width="267" height="267" alt="cream-product-13">
-							<span class="product-price">355</span>
-							<img src="img/rubl.png" width="25" height="30" alt="P">
-							<span class="per-weight">/кг</span>
-							<p class="product-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
-						</a>
-						<div class="quick-view">
-								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+						<img src="img/hit.jpg" class="hit-img" width="60" height="60" alt="hit">
+						<img src="img/cream-product-13.jpg" class="product-item-img" width="267" height="267" alt="cream-product-13">
+						<span class="product-price">355</span>
+						<img src="img/rubl.png" class="rubl-img" width="25" height="30" alt="P">
+						<span class="per-weight">/кг</span>
+						<p class="product-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
+						<div class="product-quick-view">
+							<a class="btn product-quick-view-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</div>
 					<div class="product-item">
-						<a class="product-item-link" href="#">
-							<img src="img/hit.jpg" width="60" height="60" alt="hit">
-							<img src="img/cream-product-14.jpg" width="267" height="267" alt="cream-product-14">
-							<span class="product-price">415</span>
-							<img src="img/rubl.png" width="25" height="30" alt="P">
-							<span class="per-weight">/кг</span>
-							<p class="product-name">Сливочное крем-брюле с карамельной подливкой</p>
-						</a>
-						<div class="quick-view">
-								<a class="btn quick-view-btn" href="#">Быстрый просмотр</a>
+						<img src="img/hit.jpg" class="hit-img" width="60" height="60" alt="hit">
+						<img src="img/cream-product-14.jpg" class="product-item-img" width="267" height="267" alt="cream-product-14">
+						<span class="product-price">415</span>
+						<img src="img/rubl.png" class="rubl-img" width="25" height="30" alt="P">
+						<span class="per-weight">/кг</span>
+						<p class="product-name">Сливочное крем-брюле с карамельной подливкой</p>
+						<div class="product-quick-view">
+							<a class="btn product-quick-view-btn" href="#">Быстрый просмотр</a>
 						</div>
 					</div>
 				</div>
@@ -156,18 +147,18 @@
 					</div>
 					<div class="seo-item">
 						<div class="seo-item-img">
-							<img src="img/seo-leaf.png" width="48" height="48" alt="seo-img-2">
-						</div>
-						<div class="seo-item-text">
-							<p class="seo-item-description">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
-						</div>
-					</div>
-					<div class="seo-item">
-						<div class="seo-item-img">
 							<img src="img/seo-cow.png" width="48" height="48" alt="seo-img-3">
 						</div>
 						<div class="seo-item-text">
 							<p class="seo-item-description">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
+						</div>
+					</div>
+					<div class="seo-item">
+						<div class="seo-item-img">
+							<img src="img/seo-leaf.png" width="48" height="48" alt="seo-img-2">
+						</div>
+						<div class="seo-item-text">
+							<p class="seo-item-description">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
 						</div>
 					</div>
 					<div class="seo-item">
@@ -181,9 +172,8 @@
 				</div>
 				<div class="blog-and-mail">
 					<div class="blog-news">
-						<!-- картинку поставлю фоном -->
 						<p class="blog-news-title">Новое в нашем блоге</p>
-						<a href="#" class="blog-news-text">10 способов сервировки фруктовых щербетов к столу</p>
+						<a href="#" class="blog-news-text">10 способов сервировки фруктовых щербетов к столу</a>
 					</div>
 					<div class="mail-distibution">
 						<form class="mail-distibution-form" action="https://echo.htmlacademy.ru" method="post">
@@ -210,21 +200,20 @@
 			</main>
 		</div>
 		<div class="map">
-			<!-- сама карта пойдет фоном -->
 			<div class="map-pointer">
 				<img src="img/map-pointer.png" width="80" height="140" alt="pointer">
 			</div>
-			<div class="adress-block">
+			<div class="adress-block clearfix">
 				<p class="adress-title">Адрес главного офиса и офлайн магазина</p>
 				<p class="adress-text">ул. Большая Коюшенная 19/8, Санкт-Петербург</p>
 				<p class="phone-title">Для заказов по телефону</p>
-				<a class="phone-number" href="8 812 450 25 25">8 812 450-25-25</a>
+				<a class="phone-number" href="88124502525">8 812 450-25-25</a>
 				<p class="phone-comments">(с 10 до 20 ежедневно)</p>
 				<a href="#" class="btn feedback-btm">Форма обратной связи</a>
 			</div>
 		</div>
 		<div class="container">
-			<footer>
+			<footer class="index-footer">
 				<div class="footer-social">
 					<a class="social-btn social-btn-tw" href="#">twitter</a>
 					<a class="social-btn social-btn-inst" href="#">instagram</a>
@@ -233,7 +222,7 @@
 				</div>
 				<div class="footer-common-links">
 				<!-- думал про дополнительные обертки, но решил пока не делать, буду писать CSS - определюсь -->
-					<img src="img/heart.jpg" width="15" height="15" alt="heart">
+					<img src="img/heart.jpg" class="footer-heart-img" width="15" height="15" alt="heart">
 					<a class="footer-common-link-item" href="#">Для поставщиков</a>
 					<a class="footer-common-link-item" href="#">О производстве</a>
 					<a class="footer-common-link-item" href="#">Наши документы</a>
