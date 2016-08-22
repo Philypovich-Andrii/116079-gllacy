@@ -19,10 +19,10 @@ img {
 	height: auto;
 }
 .clearfix::after {
-	content:"";
+	content: "";
 
-	display:table;
-clear: both;
+	display: table;
+	clear: both;
 }
 /* /margin padding reset */
 /* container */
@@ -64,22 +64,66 @@ clear: both;
 	 width: 267px;
 	 outline: 2px solid blue;
   }
+ .search-block{
+	 position: relative;
+ }
+ .search-form{
+	display: none;
+	justify-content: center;
+	position: absolute;
+	top: 50px;
+	right: 80px;
+	width: 341px;
+	min-height: 84px;
+	box-sizing: border-box;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 20px;
+}
+.search-form-field{
+	width: 100%;
+}
 .sub-menu{
 	display: none;
 }
-.search-form{
-	display: none;
+.enter-block{
+	 position: relative;
 }
 .enter-form{
 	display: none;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 50px;
+	right: 80px;
+	width: 277px;
+	min-height: 214px;
+	box-sizing: border-box;
+	padding: 20px;
+}
+.enter-form-row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	outline: 2px solid gray;
+}
+.enter-form-row label{
+	font-size: 0px;
+	width: 100%;
+}
+.enter-form-login-field,
+.enter-form-password-field{
+	width: 100%;
 }
 /*  /header */
 
 /* contacts */
 .contacts-block{
-	position:absolute;
-	top:84px;
-	right:379px;
+	position: absolute;
+	top: 84px;
+	right: 379px;
 	outline: 2px solid green;
 }
 /*  /contacts*/
@@ -99,8 +143,8 @@ clear: both;
   .banners{
 	display: flex;
 	justify-content: space-between;
-	min-height:230px;
-	margin-bottom:40px;
+	min-height: 230px;
+	margin-bottom: 40px;
   }
    .banner{
 	outline: 2px solid green;
@@ -109,38 +153,39 @@ clear: both;
   .products-row{
 	display: flex;
 	justify-content: space-between;
-	min-height:330px;
-	margin-bottom:32px;
+	min-height: 330px;
+	margin-bottom: 32px;
   }
   .seo-block{
 	display: flex;
 	justify-content: space-between;
-	min-height:305px;
-	margin-bottom:40px;
-	flex-wrap:wrap;
+	min-height: 305px;
+	margin-bottom: 40px;
+	flex-wrap: wrap;
 	outline: 1px solid red;
   }
   .seo-title{
-	width: 1200px;
+	width: 100%;
 	min-height: 95px;
 	font-size: 24px;
 	line-height: 30px;
 	color: #323232;
   }
   .seo-item{
-	box-sizing:border-box;
+	box-sizing: border-box;
 	outline: 2px solid green;
 	width: 560px;
 	min-height: 85px;
-	position: relative;
-	padding-left: 75px;
-	padding-top: 14px;
 	padding-bottom: 14px;
   }
   .seo-item-img{
-	position: absolute;
-	top: 0px;
-	left: 0px;
+	display: inline-block;
+	vertical-align: top;
+  }
+  .seo-item-text{
+	display: inline-block;
+	vertical-align: top;
+	max-width: 90%;
   }
   .seo-item-description{
 	color: #323232;
@@ -148,8 +193,8 @@ clear: both;
  .blog-and-mail{
 	display: flex;
 	justify-content: space-between;
-	min-height:220px;
-	margin-bottom:40px;
+	min-height: 220px;
+	margin-bottom: 40px;
   }
    .blog-news,
    .mail-distibution{
@@ -164,7 +209,7 @@ clear: both;
 	text-decoration: underline;
 }
 .feedback-form{
-	display:none;
+	display: none;
 }
 /* /index-main */
 /* map */
@@ -179,17 +224,17 @@ clear: both;
 	left: 50px;
 }
 .adress-block{
-	width:300px;
-	min-height:305px;
-	box-sizing:border-box;
-	padding-top:32px;
-	padding-bottom:28px;
-	padding-left:25px;
-	padding-right:25px;
-	outline:2px solid blue;
-	float:right;
-	margin-right:27px;
-	margin-top:62px;
+	width: 300px;
+	min-height: 305px;
+	box-sizing: border-box;
+	padding-top: 32px;
+	padding-bottom: 28px;
+	padding-left: 25px;
+	padding-right: 25px;
+	outline: 2px solid blue;
+	float: right;
+	margin-right: 27px;
+	margin-top: 62px;
 }
 /* /map */
 /* footer */
@@ -204,31 +249,40 @@ clear: both;
 	align-items: center;
 }
 .footer-social{
-	display:flex;
-	justify-content:flex-start;
-	align-items:center;
-	outline:1px solid green;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+	outline: 1px solid green;
+	max-width: 267px;
+	margin-right: 26px;
 }
 .social-btn{
-	display:block;
-	margin-right:10px;
+	display: block;
+	margin-right: 10px;
 }
 .footer-common-links{
-	position:relative;
-	display:flex;
-	flex-wrap:wrap;
-	outline:1px solid green;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	outline: 1px solid green;
 }
 .footer-heart-img{
-	position:absolute;
-	top:20px;
-	left:20px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
 }
-.footer-common-link-item{
-	min-width:175px;
+.footer-common-links-left{
+	width: 145px;
+}
+.footer-common-links-right{
+	width: 195px;
 }
 .footer-copyright{
-	outline:1px solid green;
+	outline: 1px solid green;
+	max-width: 267px;
+	margin-left: 26px;
 }
 /* /footer */
 /* product-item */
