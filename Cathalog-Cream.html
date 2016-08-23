@@ -29,59 +29,16 @@
 					</nav>
 				</div>
 				<div class="header-right">
-					<div class="search-block">
-						<a href="#" class="btn search"></a>
-						<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-							<input type="search" name="What-Find" value="" placeholder="Что ищем?">
-						</form>
-					</div>
-					<div class="enter-block">
-						<a href="#" class="btn enter">Вход</a>
-						<form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
-							<label class="login">Электронная почта
-								<input type="text" name="login-field" value="">
-							</label>
-							<label class="password">Пароль
-								<input type="password" name="password-field" value="">
-							</label>
-							<input type="submit" value="Войти">
-							<a href="#" class="btn enter-form-forgot">Забыли пароль?</a>
-							<a href="#" class="btn enter-form-registry">Новая регистрация</a>
-						</form>
-					</div>
-					<div class="basket-block">
-			<!-- Можно ли следующий блок оставить так или нужно уже к джаваскрипту привязываться? -->
-						<a href="#" class="btn basket-full">2 товара</a>
+					<div class="user-block">
+						<ul class="user-block-btns">
+							<li class="search-btn-block"><a href="#" class="search-btn">Q</a></li>
+							<li class="enter-btn-block"><a href="#" class="enter-btn">Вход</a></li>
+							<li class="basket-btn-block"><a href="#" class="btn basket-full">2 товара</a></li>
+						</ul>
 					</div>
 					<div class="contacts-block">
 						<p class="contacts-time">C 10 до 20, ежедневно</p>
 						<p class="contacts-phone">8 812 450-25-25</p>
-					</div>
-					<div class="basket">
-					<!-- сначал думал эту штуку делать на дивах -но потом посмотрел, что это же чистая таблица и сделал ее таблицей -->
-						<table class="basket-table">
-							<tr class="basket-table-row">
-								<td class="basket-table-column-1"><span class="delete-btn"></span></td>
-								<td class="basket-table-column-2"><img src="img/plombier-product-11.jpg" width="33" height="33" alt="plombier-product-11"></td>
-								<td class="basket-table-column-3">Пломбир с апельсиновым джемом</td>
-								<td class="basket-table-column-4">1,5 кг х</td>
-								<td class="basket-table-column-5">200 руб.</td>
-								<td class="basket-table-column-6">300 руб.</td>
-							</tr>
-							<tr class="basket-table-row">
-								<td class="basket-table-column-1"><span class="delete-btn"></span></td>
-								<td class="basket-table-column-2"><img src="img/plombier-product-12.jpg" width="33" height="33" alt="plombier-product-11"></td>
-								<td class="basket-table-column-3">Клубничный пломбир с присыпкой из белого шоколада</td>
-								<td class="basket-table-column-4">1,5 кг х</td>
-								<td class="basket-table-column-5">300 руб.</td>
-								<td class="basket-table-column-6">450 руб.</td>
-							</tr>
-							<tr class="basket-table-row">
-								<td class="basket-table-column-common" colspan="6">Итого:750 руб.</td>
-							</tr>
-						</table>
-						<!-- тут у меня было 2 варианта: либо <button type="submit", либо <a>. Решил, что раз это не форма, то пусть будет <a> -->
-						<a class="btn order-drow-btn">Оформить заказ</a>
 					</div>
 				</div>
 			</header>
@@ -313,6 +270,56 @@
 					<a href="#next" class="paginator-active">&#707;</a>
 				</div>
 			</main>
+			<div class="floating-forms-block">			
+				<div class="search-form-block">
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+						<input type="search" name="what-find" class="search-form-field" value="" placeholder="Что ищем?">
+					</form>
+				</div>
+				<div class="enter-form-block">
+					<form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
+						<div class="enter-form-row">
+							<label class="login">Электронная почта
+								<input type="text" class="enter-form-login-field" name="login-field" value="" placeholder="Электронная почта">
+							</label>
+						</div>
+						<div class="enter-form-row">
+							<label class="password">Пароль
+								<input type="password" class="enter-form-password-field" name="password-field" value="" placeholder="Пароль">
+							</label>
+						</div>
+						<div class="enter-form-row">
+							<input type="submit" class="btn enter-form-submit" value="Войти">
+							<a href="#" class="btn enter-form-forgot">Забыли пароль?</a>
+							<a href="#" class="btn enter-form-registry">Новая регистрация</a>
+						</div>
+					</form>
+				</div>
+				<div class="basket-block">
+					<table class="basket-table">
+						<tr class="basket-table-row">
+							<td class="basket-table-column-1"><span class="delete-btn"></span></td>
+							<td class="basket-table-column-2"><img src="img/plombier-product-11.jpg" width="33" height="33" alt="plombier-product-11"></td>
+							<td class="basket-table-column-3">Пломбир с апельсиновым джемом</td>
+							<td class="basket-table-column-4">1,5 кг х</td>
+							<td class="basket-table-column-5">200 руб.</td>
+							<td class="basket-table-column-6">300 руб.</td>
+						</tr>
+						<tr class="basket-table-row">
+							<td class="basket-table-column-1"><span class="delete-btn"></span></td>
+							<td class="basket-table-column-2"><img src="img/plombier-product-12.jpg" width="33" height="33" alt="plombier-product-11"></td>
+							<td class="basket-table-column-3">Клубничный пломбир с присыпкой из белого шоколада</td>
+							<td class="basket-table-column-4">1,5 кг х</td>
+							<td class="basket-table-column-5">300 руб.</td>
+							<td class="basket-table-column-6">450 руб.</td>
+						</tr>
+						<tr class="basket-table-row">
+							<td class="basket-table-column-common" colspan="6">Итого:750 руб.</td>
+						</tr>
+					</table>
+					<a class="btn order-drow-btn">Оформить заказ</a>
+				</div>
+			</div>
 			<footer class="cathalog-cream-footer">
 				<div class="footer-social">
 					<a class="social-btn social-btn-tw" href="#">twitter</a>

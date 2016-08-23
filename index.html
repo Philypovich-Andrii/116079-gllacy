@@ -28,34 +28,12 @@
 					</nav>
 				</div>
 				<div class="header-right">
-					<div class="search-block">
-						<a href="#" class="search-btn"></a>
-						<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-							<input type="search" name="what-find" class="search-form-field" value="" placeholder="Что ищем?">
-						</form>
-					</div>
-					<div class="enter-block">
-						<a href="#" class="enter-btn">Вход</a>
-						<form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
-							<div class="enter-form-row">
-								<label class="login">Электронная почта
-									<input type="text" class="enter-form-login-field" name="login-field" value="" placeholder="Электронная почта">
-								</label>
-							</div>
-							<div class="enter-form-row">
-								<label class="password">Пароль
-									<input type="password" class="enter-form-password-field" name="password-field" value="" placeholder="Пароль">
-								</label>
-							</div>
-							<div class="enter-form-row">
-								<input type="submit" class="btn enter-form-submit" value="Войти">
-								<a href="#" class="btn enter-form-forgot">Забыли пароль?</a>
-								<a href="#" class="btn enter-form-registry">Новая регистрация</a>
-							</div>
-						</form>
-					</div>
-					<div class="basket-block">
-						<a href="#" class="basket-btn">Пусто</a>
+					<div class="user-block">
+						<ul class="user-block-btns">
+							<li class="search-btn-block"><a href="#" class="search-btn">Q</a></li>
+							<li class="enter-btn-block"><a href="#" class="enter-btn">Вход</a></li>
+							<li class="basket-btn-block"><a href="#" class="basket-btn">Пусто</a></li>
+						</ul>
 					</div>
 					<div class="contacts-block">
 						<p class="contacts-time">C 10 до 20, ежедневно</p>
@@ -191,29 +169,55 @@
 					</div>
 				</div>
 			</main>
-			<div class="feedback-form-block">
-				<form action="https://echo.htmlacademy.ru" class="feedback-form" method="post">
-				<div class="feedback-form-row">
-					<span class="close-btn">x</span> 
-					<p class="feedback-form-title">Мы обязательно вам ответим!</p>
+			<div class="floating-forms-block">			
+				<div class="search-form-block">
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+						<input type="search" name="what-find" class="search-form-field" value="" placeholder="Что ищем?">
+					</form>
 				</div>
-				<div class="feedback-form-row">
-					<label class="feedback-name"> Как вас зовут?
-						<input type="text" name="feedback-name-field" value="" placeholder="Как вас зовут?">
-					</label>
+				<div class="enter-form-block">
+					<form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
+						<div class="enter-form-row">
+							<label class="login">Электронная почта
+								<input type="text" class="enter-form-login-field" name="login-field" value="" placeholder="Электронная почта">
+							</label>
+						</div>
+						<div class="enter-form-row">
+							<label class="password">Пароль
+								<input type="password" class="enter-form-password-field" name="password-field" value="" placeholder="Пароль">
+							</label>
+						</div>
+						<div class="enter-form-row">
+							<input type="submit" class="btn enter-form-submit" value="Войти">
+							<a href="#" class="btn enter-form-forgot">Забыли пароль?</a>
+							<a href="#" class="btn enter-form-registry">Новая регистрация</a>
+						</div>
+					</form>
+						</div>
+				<div class="feedback-form-block">
+					<form action="https://echo.htmlacademy.ru" class="feedback-form" method="post">
+						<div class="feedback-form-row">
+							<span class="close-btn">x</span> 
+							<p class="feedback-form-title">Мы обязательно вам ответим!</p>
+						</div>
+						<div class="feedback-form-row">
+							<label class="feedback-name"> Как вас зовут?
+								<input type="text" name="feedback-name-field" value="" placeholder="Как вас зовут?">
+							</label>
+						</div>
+						<div class="feedback-form-row">
+							<label class="feedback-mail">Ваша почта для ответа?
+								<input type="text" name="feedback-mail-field" value="" placeholder="Ваша почта для ответа?">
+							</label>
+						</div>
+						<div class="feedback-form-row">
+							<textarea name="feedback-text-field">Напишите что-нибудь...</textarea>
+						</div>
+						<div class="feedback-form-row">
+							<input type="submit" class="btn feedback-form-btn" value="Отправить">
+						</div>
+					</form>
 				</div>
-				<div class="feedback-form-row">
-					<label class="feedback-mail">Ваша почта для ответа?
-						<input type="text" name="feedback-mail-field" value="" placeholder="Ваша почта для ответа?">
-					</label>
-				</div>
-				<div class="feedback-form-row">
-					<textarea name="feedback-text-field">Напишите что-нибудь...</textarea>
-				</div>
-				<div class="feedback-form-row">
-					<input type="submit" class="btn feedback-form-btn" value="Отправить">
-				</div>
-				</form>
 			</div>
 		</div>
 		<div class="map">
