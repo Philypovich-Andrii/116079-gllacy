@@ -190,21 +190,31 @@
 						</form>
 					</div>
 				</div>
-				<div class="feedback-form">
-					<form action="https://echo.htmlacademy.ru" method="post">
-					<span class="close-btn"></span>
+			</main>
+			<div class="feedback-form-block">
+				<form action="https://echo.htmlacademy.ru" class="feedback-form" method="post">
+				<div class="feedback-form-row">
+					<span class="close-btn">x</span> 
 					<p class="feedback-form-title">Мы обязательно вам ответим!</p>
+				</div>
+				<div class="feedback-form-row">
 					<label class="feedback-name"> Как вас зовут?
-						<input type="text" name="feedback-name-field" value="">
+						<input type="text" name="feedback-name-field" value="" placeholder="Как вас зовут?">
 					</label>
-					<label class="feedback-mail">
+				</div>
+				<div class="feedback-form-row">
+					<label class="feedback-mail">Ваша почта для ответа?
 						<input type="text" name="feedback-mail-field" value="" placeholder="Ваша почта для ответа?">
 					</label>
-					<textarea name="feedback-text-field">Напишите что-нибудь...</textarea>
-					<input type="submit" class="btn feedback-form-btn" value="Отправить">
-					</form>
 				</div>
-			</main>
+				<div class="feedback-form-row">
+					<textarea name="feedback-text-field">Напишите что-нибудь...</textarea>
+				</div>
+				<div class="feedback-form-row">
+					<input type="submit" class="btn feedback-form-btn" value="Отправить">
+				</div>
+				</form>
+			</div>
 		</div>
 		<div class="map">
 			<div class="map-pointer">
